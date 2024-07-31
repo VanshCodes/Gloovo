@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../product.css" rel="stylesheet" >
-    <title>Product1 | Gloovo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../product.css" rel="stylesheet">
+  <title>Product1 | Gloovo</title>
 </head>
+
 <body>
-  
-    <h1 id="top-heading" >Gloovo</h1>
-       <div class="product-card">
-        <h1 id="name">Sunset Sherbet</h1>
-        <p>Sweatshirt</p>
-        <div id="image" class="product-image">
-        </div>
 
-        <div class="product-colors">
-        <span data-image="url()">      
-       </span>
-        </div>
+  <h1 id="top-heading">Gloovo</h1>
+  <div class="product-card">
+    <h1 id="name">Sunset Sherbet</h1>
+    <p>Sweatshirt</p>
+    <div id="image" class="product-image">
+    </div>
 
-        <div class="product-info">
-          <div id="price" class="product-price">Rs. 2,550</div>
-          <a href="../Size-Quantity.html" class="product-button">Buy now</a>
-        </div>
-      </div>
-   
+    <div class="product-colors">
+      <span data-image="url()">
+      </span>
+    </div>
 
-      <footer id="footer">
-        <h2>Gloovo &copy; all rights reserved</h2>
-      </footer>
-      <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const imgLink = urlParams.get('imgLink')
-        const name = urlParams.get('name')
-        document.getElementById("name").innerHTML = name
-        console.log({name})
-        document.title = name
-        document.getElementById("image").style.backgroundImage = `url(${imgLink})`
-        
-      </script>
-      <script>
-        document.getElementById("price").innerHTML = "Rs"+ parseInt(Math.random()*2000)+ ".99"
-      </script>
+    <div class="product-info">
+      <div id="price" class="product-price">Rs. 2,550</div>
+      <a href="../../Payment-Success.html" class="product-button">Buy now</a>
+    </div>
+  </div>
+
+
+  <footer id="footer">
+    <h2>Gloovo &copy; all rights reserved</h2>
+  </footer>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const imgLink = urlParams.get('imgLink')
+    const name = urlParams.get('name')
+    document.getElementById("name").innerHTML = name
+    console.log({ name })
+    document.title = name
+    document.getElementById("image").style.backgroundImage = `url(${imgLink})`
+
+  </script>
+  <script>
+    document.getElementById("price").innerHTML = "Rs" + parseInt(Math.random() * 2000) + ".99"
+  </script>
 </body>
+
 </html>
